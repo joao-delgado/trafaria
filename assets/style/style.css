@@ -22,13 +22,32 @@ html {
   background: gray;
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 10;
+}
+nav .logo {
+  font-size: 40px;
+}
+
 #map {
   height: 100vh;
   width: 100%;
+  z-index: 0;
+}
+
+.leaflet-popup-content-wrapper {
+  width: 40vw;
+  aspect-ratio: 16/9;
+  position: relative;
+  padding: 20px;
 }
 
 .pop-up-video {
-  width: 50vw;
-  aspect-ratio: 16/9;
-  position: relative;
+  width: 30vw;
 }/*# sourceMappingURL=style.css.map */

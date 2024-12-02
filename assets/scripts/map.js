@@ -1,5 +1,7 @@
 // Initialize the map and set its view to the desired location
-var map = L.map("map").setView([38.66957, -9.23353], 15) // Change this to your region's coordinates
+var map = L.map("map", {
+  zoomControl: false // Remove the zoom control buttons
+}).setView([38.66957, -9.23353], 15) // Change this to your region's coordinates
 
 // Define the max bounds area
 var bounds = L.latLngBounds(
@@ -12,7 +14,7 @@ map.setMaxBounds(bounds)
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
   attribution: '&copy; <a href="https://carto.com/attributions">CartoDB</a>',
   maxZoom: 19,
-  minZoom: 14,
+  minZoom: 15,
 }).addTo(map)
 
 // Load the Trafaria boundary from GeoJSON file

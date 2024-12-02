@@ -17,3 +17,18 @@ html {
   color: white;
   background: gray;
 }
+
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: $s-spacing $m-spacing;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 10;
+
+  .logo {
+    font-size: 40px;
+  }
+}
